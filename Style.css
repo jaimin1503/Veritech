@@ -1,0 +1,141 @@
+body {
+  background: rgb(86, 21, 163);
+  background: linear-gradient(
+    101deg,
+    rgba(86, 21, 163, 1) 0%,
+    rgba(13, 0, 27, 1) 100%
+  );
+  color: antiquewhite;
+}
+
+.company-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.c-name {
+  font-size: 1.5rem;
+  font-weight: 300;
+  background-color: #9b4eed;
+  border-radius: 0.75rem;
+  padding: 0.5rem 1.25rem;
+  margin: 2rem;
+}
+
+.c-description {
+  padding: 0.5rem; /* px-2 */
+  text-align: center;
+  font-size: 1.125rem; /* text-lg */
+}
+
+.row2-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: 300;
+  border-bottom: 2px solid wheat;
+  padding: 0.5rem 1.25rem;
+}
+
+.founders {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.vp-team {
+  overflow-x: scroll;
+}
+
+.vps {
+  display: flex;
+  align-items: center;
+}
+
+/* Team Styles */
+.management-team {
+  display: flex;
+  justify-content: center;
+}
+
+.founder-card {
+  text-align: center;
+  margin: 1rem 2rem;
+}
+
+/* Individual Card Styles */
+.founder-card img {
+  height: 14rem; /* h-60 */
+  width: 14rem; /* w-60 */
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.founder-card p {
+  margin-top: 0.5rem;
+  font-size: larger;
+}
+
+.d-container {
+  max-height: 60vw;
+  overflow-y: auto;
+  margin: 0 4rem;
+}
+
+.d-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/* Developer Styles */
+.developers {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+/* Marketing Styles */
+.Marketing {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .c-name {
+    font-size: 1.875rem; /* md:text-3xl */
+  }
+
+  .c-description {
+    padding: 0 5rem; /* md:px-20 */
+  }
+
+  .heading {
+    font-size: 1.875rem; /* md:text-3xl */
+  }
+
+  .vps {
+    justify-content: center;
+  }
+}
+
+/* Max Height Styles */
+.d-container {
+  max-height: 24rem; /* max-h-96 */
+  overflow-y: auto;
+  margin: 0 1rem; /* mx-16 */
+}
+
+@media (min-width: 768px) {
+  .d-container {
+    max-height: 100vh; /* md:max-h-screen */
+  }
+}
